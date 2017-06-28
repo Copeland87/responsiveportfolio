@@ -1,0 +1,254 @@
+/* Makes borders and padding included in box size... use next time
+* {
+    box-sizing: border-box;
+}
+*/
+body {
+    width: 970px;
+    margin: 0 auto;
+}
+
+#bg {
+    opacity: 0.9;
+    width: .75;
+    height: auto;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+a {
+    color: #4AAAA5;
+}
+a:hover {
+    color: black;
+}
+
+/*new code?*/
+
+img {
+  border-radius: 20%;
+  -webkit-transition: -webkit-transform .8s ease-in-out;
+          transition:         transform .8s ease-in-out;
+}
+img:hover {
+  -webkit-transform: rotate(1080deg);
+          transform: rotate(1080deg);
+}
+
+
+/*end experimental code*/
+
+#wrapper {
+    position: static;
+}
+
+#header {
+    width: 22.5%;
+    margin: 0 36% 0 10%;
+    float: left;
+}
+
+h1 {
+    color: white;
+    background-color: #4AAAA5;
+    padding: 4% 6% 4% 6%;
+    margin: 5% 0 0 0;
+    text-align: center;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+}
+
+#navbar {
+    list-style: none;
+    float: left;
+    width: 23%;
+    float: left;
+    margin: 2% 0 0 0;
+}
+
+.nav {
+    float: left;
+    margin-left: 2%;
+    font-size: 110%;
+    background-color: #DDDDDD;
+    padding: 3%;
+    border-radius: 25px;
+}
+
+h2 {
+    color: #4AAAA5;
+    border-bottom: 5px solid #cccccc;
+}
+
+/*left column*/
+#content {
+    width: 69%;
+    float: left;
+    background-color: #FFFFFF;
+    margin: 0 2% 0 0;
+    border-radius: 25px;
+    border: 3px solid #cccccc;
+}
+
+.about {
+    padding:0 3% 0 3%;
+}
+
+#hammock {
+    width: 15%;
+    height: auto;
+    height: auto;
+    float: left;
+    margin: 0 1% 1% 0;
+}
+
+/*right column*/
+#connect {
+    width: 24%;
+    height: auto;
+    float: left;
+    background-color: #FFFFFF;
+    text-align: center;
+    border-radius: 25px;
+    border: 3px solid #cccccc;
+}
+
+.cimg {
+    width: 22%;
+    height: auto;
+    margin: 0 .5% 4% .5%
+}
+
+/*footer*/
+#footer {
+    width: 940px;
+    background-color: #666666;
+    text-align: center;
+    border-top: 10px solid #4AAAA5;
+    margin-left: 0%;
+    position: fixed;
+    bottom: 0;
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        width: 768px;
+        margin-left: 3%;
+    }
+
+    #header {
+        margin-left: 0;
+        width: 50%;
+        margin: 0 5% 4% 0;
+    }
+
+    h1 {
+        border-radius: 25px;
+    }
+
+    #navbar {
+        margin-top: 5%;
+        width: 30%;
+    }
+
+    #nav {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    #content {
+        width: 94%;
+        margin: 0 auto;
+        margin-bottom: 3%;
+    }
+
+    #name {
+        width: 100%;
+    }
+
+    #email {
+        width: 100%;
+    }
+
+    #subject {
+        width: 100%;
+    }
+
+    #connect {
+        width: 94%;
+        margin: 0 auto;
+        text-align: left;
+        
+    }
+    
+    h2 {
+        padding-bottom: 3%;
+        text-indent: 3%;
+    }
+
+    .cimg {
+        width: 10%;
+        height: auto;
+        margin-left: 2%;
+    }
+    
+    #footer {
+        height: 8%;
+        width: 100%;
+        margin: -3%;
+    }
+
+}
+
+@media screen and (max-width: 640px) {
+    
+    body {
+        margin: 0 auto;
+        width: 640px;
+    }
+
+    #header {
+        width: 100%;
+        margin: -5% 0 0 0%;
+        float: none;
+    }
+
+    h1 {
+        border-radius: 0;
+    }
+
+    #navbar {
+        background-color: #DDDDDD;
+        width: 100%;
+        margin-top: 0;
+    }
+
+    .nav {
+        border-radius: 0;
+        width: 31%;
+        text-align: center;
+        padding: 3% 0 3% 0;
+        margin: 0;
+    }
+
+    #content {
+        border-radius: 0;
+        width: 90%;
+        margin: 5% 0 0 5%;
+    }
+
+
+    #connect {
+        border-radius: 0;
+        width: 90%;
+        margin: 0% 0 0 5%;
+    }
+
+    #footer {
+        width: 110%;
+        position: fixed;
+    }
